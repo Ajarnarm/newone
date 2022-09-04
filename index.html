@@ -58,79 +58,94 @@
   "type": "bubble",
   "hero": {
     "type": "video",
-    "url": "https://www.dropbox.com/s/nt5nu1ckv6mj6db/3D_1.mp4?dl=0",
-    "previewUrl": "https://www.img.in.th/images/dc24fff1f288de9a9869f183b61ecda9.jpg",
+    "url": "https://youtu.be/QbUeQXpeVjw.mp4",
+    "previewUrl": "https://img.in.th/images/f851057b9175b8edd329c613d988cb09.jpg",
     "altContent": {
       "type": "image",
       "size": "full",
-      "aspectRatio": "1:1",
+      "aspectRatio": "16:9",
       "aspectMode": "cover",
-      "url": "https://www.img.in.th/images/dc24fff1f288de9a9869f183b61ecda9.jpg"
+      "url": "https://img.in.th/images/f851057b9175b8edd329c613d988cb09.jpg"
     },
     "action": {
       "type": "uri",
-      "label": "รับเครดิตฟรีทันที",
+      "label": "รับเครดิตฟรี",
       "uri": "https://lin.ee/DZtVqx7"
     },
-    "aspectRatio": "16:9"
+    "aspectRatio": "20:13"
   },
   "body": {
     "type": "box",
     "layout": "vertical",
+    "spacing": "md",
     "contents": [
       {
         "type": "text",
-        "text": "👇👇กดรับเครดิตฟรีได้เลย.-👇👇",
+        "text": "แจกเครดิตฟรีจำนวน 50.-",
+        "wrap": true,
         "weight": "bold",
-        "size": "md",
-        "align": "center",
-        "color": "#28a745"
+        "gravity": "center",
+        "size": "xl"
       },
       {
         "type": "box",
         "layout": "vertical",
-        "contents": []
-      }
-    ],
-    "backgroundColor": "#750976"
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "👇👇👇 กดรับ  👇👇👇",
+                "wrap": true,
+                "size": "sm",
+                "color": "#666666",
+                "flex": 4
+              }
+            ],
+            "position": "relative",
+            "offsetStart": "50px"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": []
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": []
+          }
+        ]
+      },
       {
-        "type": "image",
-        "url": "https://sv1.picz.in.th/images/2021/08/02/2xhuSt.png",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://lin.ee/DZtVqx7"
-        },
-        "aspectMode": "cover",
-        "backgroundColor": "#750976",
-        "aspectRatio": "150:196",
-        "align": "center"
+        "type": "box",
+        "layout": "vertical",
+        "margin": "xxl",
+        "contents": [
+          {
+            "type": "image",
+            "aspectMode": "cover",
+            "size": "xl",
+            "margin": "md",
+            "url": "https://i.gifer.com/In5m.gif",
+            "action": {
+              "type": "uri",
+              "label": "action",
+              "uri": "https://lin.ee/DZtVqx7"
+            }
+          }
+        ]
       }
-    ],
-    "backgroundColor": "#750976"
+    ]
   }
 }
-      }])
-      if (result) {
-        liff.closeWindow()
-      } else {
-        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
-
-        if (minorVer === undefined) {
-          alert('มีการกดออกจากการแชร์')
-          return
-        }
-
-        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
-          alert('มีการกดออกจากการแชร์')
-        }
-      }
-    }
 
     function logOut() {
       liff.logout()
